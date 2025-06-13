@@ -71,13 +71,17 @@
       "destination": "/index.html"
     }
   ],
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist",
-  "installCommand": "npm install",
-  "devCommand": "npm run dev",  "framework": "vite",
-  "regions": ["iad1"],
-  "public": true,
-  "github": {
+   "buildCommand": "npm run build",
+   "outputDirectory": "dist",
+   "installCommand": "npm install",
+   "devCommand": "npm run dev",
+   "framework": "vite",
+   "functions": {},
+   "devCommand": "npm run dev",
+   "framework": "vite",
+   "regions": ["iad1"],
+   "public": true,
+   "github": {
     "silent": true
   },
   "env": {

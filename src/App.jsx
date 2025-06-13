@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import "./App.css";
 
 function App() {
+  const navigate = useNavigate();
   const [isAnimating, setIsAnimating] = useState(false);
   const [currentBeat, setCurrentBeat] = useState(0);
 
@@ -23,7 +25,7 @@ function App() {
     if (type === 'beats') {
       window.open('https://www.youtube.com/@jhosueploo-k7j', '_blank');
     } else if (type === 'contact') {
-      window.location.href = 'contact.html';
+      navigate('/contact');
     } else if (type === 'music') {
       window.open('https://www.youtube.com/@jhosueploo', '_blank');
     }
@@ -31,13 +33,13 @@ function App() {
 
   const handleNavClick = (section) => {
     if (section === 'home') {
-      window.location.href = 'index.html';
+      navigate('/');
     } else if (section === 'beats') {
       window.open('https://www.youtube.com/@jhosueploo-k7j', '_blank');
     } else if (section === 'about') {
-      window.location.href = 'about.html';
+      navigate('/about');
     } else if (section === 'contact') {
-      window.location.href = 'contact.html';
+      navigate('/contact');
     }
   };
 
@@ -57,10 +59,10 @@ function App() {
             <img src="logo.png" alt="JhosuePloo Logo" />
           </div>
           <div className="nav-links">
-            <a href="index.html" className="nav-link" onClick={(e) => { e.preventDefault(); handleNavClick('home'); }}>Home</a>
+            <a href="/" className="nav-link" onClick={(e) => { e.preventDefault(); handleNavClick('home'); }}>Home</a>
             <a href="#beats" className="nav-link" onClick={(e) => { e.preventDefault(); handleNavClick('beats'); }}>Beats</a>
-            <a href="about.html" className="nav-link" onClick={(e) => { e.preventDefault(); handleNavClick('about'); }}>About</a>
-            <a href="contact.html" className="nav-link" onClick={(e) => { e.preventDefault(); handleNavClick('contact'); }}>Contact</a>
+            <a href="/about" className="nav-link" onClick={(e) => { e.preventDefault(); handleNavClick('about'); }}>About</a>
+            <a href="/contact" className="nav-link" onClick={(e) => { e.preventDefault(); handleNavClick('contact'); }}>Contact</a>
           </div>
         </nav>
       </header>
@@ -116,7 +118,7 @@ function App() {
             </button>
             <button 
               className="cta-button secondary"
-              onClick={() => window.location.href = 'contact.html'}
+              onClick={() => handleButtonClick('contact')}
             >
               Contactar
             </button>

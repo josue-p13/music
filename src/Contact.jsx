@@ -61,10 +61,32 @@ function Contact() {
             <h3>🤝 Colaboraciones</h3>
             <p>Trabajemos juntos en tu próximo hit. Estoy abierto a propuestas y proyectos musicales.</p>
           </div>
-        </div>
-
-        <h2 className="contacts-title">Todas mis Redes</h2>
+        </div>        <h2 className="contacts-title">📱 Contáctame</h2>
         <div className="contacts-grid">
+          <a href="https://wa.me/593998908695" target="_blank" rel="noopener noreferrer" className="contact-card priority">
+            <div className="contact-icon">💬</div>
+            <div className="contact-info">
+              <h3>WhatsApp (Recomendado)</h3>
+              <p>La forma más rápida - +593 998 908 695</p>
+            </div>
+          </a>
+
+          <a href="mailto:jhosuepin@hotmail.com" className="contact-card priority">
+            <div className="contact-icon">📧</div>
+            <div className="contact-info">
+              <h3>Email</h3>
+              <p>Para propuestas detalladas - jhosuepin@hotmail.com</p>
+            </div>
+          </a>
+
+          <a href="https://instagram.com/jhosueploo" target="_blank" rel="noopener noreferrer" className="contact-card">
+            <div className="contact-icon">�</div>
+            <div className="contact-info">
+              <h3>Instagram</h3>
+              <p>Sígueme y manda DM - @jhosueploo</p>
+            </div>
+          </a>
+          
           <a href="https://www.youtube.com/@jhosueploo-k7j" target="_blank" rel="noopener noreferrer" className="contact-card">
             <div className="contact-icon">🎧</div>
             <div className="contact-info">
@@ -81,66 +103,13 @@ function Contact() {
             </div>
           </a>
           
-          <a href="tel:+593998908695" className="contact-card">
-            <div className="contact-icon">📱</div>
-            <div className="contact-info">
-              <h3>WhatsApp</h3>
-              <p>+593 998 908 695</p>
-            </div>
-          </a>
-          
-          <a href="mailto:jhosuepin@hotmail.com" className="contact-card">
-            <div className="contact-icon">📧</div>
-            <div className="contact-info">
-              <h3>Email</h3>
-              <p>jhosuepin@hotmail.com</p>
-            </div>
-          </a>
-          
-          <a href="https://instagram.com/jhosueploo" target="_blank" rel="noopener noreferrer" className="contact-card">
-            <div className="contact-icon">📸</div>
-            <div className="contact-info">
-              <h3>Instagram</h3>
-              <p>@jhosueploo</p>
-            </div>
-          </a>
-          
           <a href="https://open.spotify.com/search/jhosueploo" target="_blank" rel="noopener noreferrer" className="contact-card">
-            <div className="contact-icon">🎵</div>
+            <div className="contact-icon">🎶</div>
             <div className="contact-info">
               <h3>Spotify</h3>
-              <p>@jhosueploo</p>
+              <p>Escucha mi música - @jhosueploo</p>
             </div>
           </a>
-        </div>
-
-        <div className="contact-form-section">
-          <h2>📝 Envíame un mensaje</h2>
-          <div className="contact-methods">
-            <div className="method-card">
-              <h4>💬 WhatsApp (Recomendado)</h4>
-              <p>La forma más rápida de contactarme</p>
-              <a href="https://wa.me/593998908695" target="_blank" rel="noopener noreferrer" className="method-button whatsapp">
-                Abrir WhatsApp
-              </a>
-            </div>
-            
-            <div className="method-card">
-              <h4>📧 Email</h4>
-              <p>Para propuestas más detalladas</p>
-              <a href="mailto:jhosuepin@hotmail.com" className="method-button email">
-                Enviar Email
-              </a>
-            </div>
-            
-            <div className="method-card">
-              <h4>📸 Instagram</h4>
-              <p>Sígueme y manda DM</p>
-              <a href="https://instagram.com/jhosueploo" target="_blank" rel="noopener noreferrer" className="method-button instagram">
-                Ir a Instagram
-              </a>
-            </div>
-          </div>
         </div>
 
         <div className="center">
